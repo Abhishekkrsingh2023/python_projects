@@ -51,7 +51,7 @@ while 1: #continuous the loop until the user exits
                 print("computer choice : ",compC)
                 print("You lose")
             # after completing the rounds
-            if(i==5):
+            if(i==rounds-1):
                 print("\n")
                 # user wins
                 if(up>cp):

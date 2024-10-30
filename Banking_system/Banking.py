@@ -1,6 +1,6 @@
 '''
     This is a Program to create and manage the account and holdings 
-    of a Bank customer usnig the class and objects fundamentals
+    of a Bank customer using the OOPS concept
 '''
 
 class Bank:
@@ -29,7 +29,7 @@ class Bank:
     def __debit_balnace(self):
         pin=int(input("Enter Pin : "))
         if(pin == self.__pin):
-            amt = int(input("Enter the amout to Debit : "))
+            amt = int(input("Enter the amount to Debit : "))
             if self.__balance > amt:
                 self.__balance = self.__balance - amt
                 print(f"Tranxation of {amt} is successful")
@@ -93,7 +93,7 @@ class Bank:
             print("Customer Not found")
 
 # All the account holders   
-cust1 = Bank("Abhishek",20,65000, 1234)
+cust1 = Bank("Abhishek",20,65000, 2234)
 cust2 = Bank("Suman",19,98000, 2255)
 cust3 = Bank("Suvadwip",19,80000, 9785)
 cust4 = Bank("Soumajit", 19, 365000, 3364)
